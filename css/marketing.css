@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1F2336;
+    --scrollbar-background: #313852;
+    --text: #F1F1F1;
+    --text-active: #F1F1F180;
+    --font-family: 'Montserrat', sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    height: 100vh;
+    background-image: url(../images/dots-bg.jpg);
+    background-size: cover;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Set a high z-index to make sure it's above other elements */
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #3498db; /* Change the color on hover as needed */
+}
+
+.active {
+    color: #3498db; /* Set the color for the active link */
+}
+
+
+.card-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    margin-top: 90px;
+    /* margin-bottom: 20px; Add margin to push down the existing containers */
+}
+
+.container-1 .card-1 {
+    position: relative; 
+    background-image: url(/images/dots-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px; /* Increase padding for more space */
+    width: 95%;
+    height: 300px; /* Adjust height as needed */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+
+
+.card.card-1 h2 {
+    font-weight: normal; /* Set default font-weight for h2 to normal */
+    
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #cbbf7d;
+}
+
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-2 .simple-box6 {
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    background-color: #4CAF50; /* Adjust background color as needed */
+    color: white;
+    border-radius: 16px;
+    padding: 16px; /* Adjust padding as needed */
+}
+
+.container-2 .simple-box6 iframe {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%; 
+    height: 153%; 
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+.simple-box6 {
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+    min-height: 507px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 16px;
+}
+
+
+.container-3 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 22px;
+}
+
+
+
+.simple-box1 {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 36px; */
+    gap: 24px;
+    padding: 16px;
+    max-width: 404px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    align-self: flex-start;
+    margin-left: 34px;
+}
+
+.simple-box1 .card {
+    min-width: 394px;
+    min-height: 546px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 2.6rem;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.simple-box1::-webkit-scrollbar {
+    height: 10px;
+}
+
+.simple-box1::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 999px;
+}
+
+.simple-box1::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 999px;
+}
+
+
+.simple-box1 .card:nth-child(1) {
+    background-image: url(../images/Compuesto-portrait-web.jpg); 
+}
+.simple-box1 .card:nth-child(2) {
+    background-image: url(../images/WeDo-Team-Graphic.jpg); 
+}
+
+.simple-box1 .card:nth-child(3) {
+    background-image: url(../images/Podcast-Cover.jpg); 
+}
+
+.simple-box1 .card:nth-child(4) {
+    background-image: url(../images/CompuestoJohn_Collage.jpg);
+}
+
+
+
+
+
+.simple-box2 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px;
+    max-width: 958px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.simple-box2 .card {
+    position: relative;
+    overflow: hidden;
+    min-width: 953px;
+    min-height: 546px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.simple-box2 .card iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%; 
+    height: 100%; 
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+.simple-box2::-webkit-scrollbar {
+    height: 10px;
+}
+
+.simple-box2::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 999px;
+}
+
+.simple-box2::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 999px;
+}
+
+
+
+.container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 22px;
+}
+
+
+
+.simple-box3 {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 36px; */
+    gap: 24px;
+    padding: 16px;
+    max-width: 404px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    align-self: flex-start;
+    margin-left: 34px;
+}
+
+.simple-box3 .card {
+    min-width: 394px;
+    min-height: 703px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 2.6rem;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center center;
+}
+
+.simple-box3 .card iframe {
+    border-radius: 16px;
+}
+
+span {
+    mix-blend-mode: difference; 
+}
+
+.simple-box3::-webkit-scrollbar {
+    height: 10px;
+}
+
+.simple-box3::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 999px;
+}
+
+.simple-box3::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 999px;
+}
+
+
+
+
+
+
+.simple-box4 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px;
+    max-width: 958px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.simple-box4 .card {
+    position: relative;
+    overflow: hidden;
+    min-width: 953px;
+    min-height: 546px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.simple-box4 .card iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%; 
+    height: 100%; 
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+.simple-box4::-webkit-scrollbar {
+    height: 10px;
+}
+
+.simple-box4::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 999px;
+}
+
+.simple-box4::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 999px;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px;
+    max-width: 602px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.container .card {
+    position: relative;
+    overflow: hidden;
+    min-width: 591px;
+    min-height: 341px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.container .card iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%; 
+    height: 100%; 
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 999px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 999px;
+}
+
+.top-simple-box {
+    position: relative;
+    overflow: hidden;
+    margin-left: 32%;
+    margin-top: -155px;
+    min-width: 952px;
+    min-height: 127px;
+    background-color: #FFC107;
+    color: white;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.top-simple-box iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350%;
+    height: 350%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.top-simple-box:hover iframe {
+    pointer-events: auto;
+}
+
+.video-container {
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+
+
+
+.simple-box5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    /* margin-top: 90px; */
+    /* margin-bottom: 90px; */
+}
+
+.container-5 .simple-box5 {
+    margin-bottom: 32px;
+    /* background-color: rgb(29 80 115); */
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px; /* Increase padding for more space */
+    width: 95%;
+    height: 300px; /* Adjust height as needed */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+
+.container-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.simple-box5 {
+    color: white;
+    font-size: 18px; /* Adjust the font size for the entire footer section */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: flex-start; /* Align items to the start */
+    width: 80%; /* Adjust width as needed */
+    position: relative; /* Add position relative */
+    background-image: url(../images/dots-bg.jpg);
+    background-size: cover;
+}
+
+.contact-info {
+    margin-bottom: 10px; /* Adjust spacing between contact and social links */
+}
+
+.contact-link,
+.social-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; /* Adjust spacing between links */
+    font-family: var(--font-family);
+    font-weight: 100;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 10px; /* Add margin between the links */
+}
+
+.social-links a {
+    margin-bottom: 10px; /* Add some spacing between the links */
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Add some margin between the links and footer info */
+}
+
+.social-links,
+.contact-info {
+    margin-right: 20px; /* Add some spacing between the links */
+}
+
+.social-links a,
+.contact-info a {
+    margin-bottom: 10px; /* Add some spacing between individual links */
+}
+
+.contact-info a:hover,
+.social-links a:hover {
+    color: #c56dff; /* Change text color on hover */
+}
+
+
+.footer-info {
+    /* position: absolute;
+    bottom: 20px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align elements to the sides */
+    font-size: 1.5rem;
+}
+
+.name {
+    align-self: flex-start; /* Align to the flex-start */
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #cbbf7d;
+}
+
+.year {
+    align-self: flex-end; /* Align to the flex-end */
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #cbbf7d;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+
+/* container-1 & simple-box5 bg overlay */
+
+
+
+/* page transition */
+
+body {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}

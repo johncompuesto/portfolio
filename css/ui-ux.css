@@ -1,0 +1,190 @@
+* {box-sizing: border-box;}
+
+html {font-size: calc(15px + 0.390625vw);}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #3498db; 
+}
+
+.active {
+    color: #3498db; 
+}
+
+/**/
+
+html {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 120%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+    padding: 0px 50px 75px 50px;
+}
+
+hgroup {
+    /* border:solid 1px red; */
+    flex: 1;
+    padding: 0px 50px 0px 0px;
+    color: #333;
+}
+
+article {
+    /* border:solid 1px teal; */
+    flex: 1;
+    z-index: 99;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 100%;
+    text-align: right;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #adc178;
+    line-height: 100%;
+    text-align: right;
+}
+
+p {
+    color: #333;
+    line-height: 100%;
+    text-align: right;
+}
+
+.stick_top {
+    position: sticky;
+    top: 3rem;
+}
+
+.mediumpic {
+    width: 200px;
+}
+
+.largepic {
+    width: 400px;
+}
+
+.largerpic {
+    width: 600px;
+}
+
+
+/* cards */
+
+.portfolio-card-link {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    text-decoration: none; /* Remove underline from link */
+    align-items: flex-end; /* Align items to the right */
+    max-width: 644px; /* Set maximum width */
+}
+
+.portfolio-card-1 {
+    background-image: url(../images/Case_Study_NeufCycle.png);
+    background-size: contain;
+    width: 642px;
+    height: 415px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-2 {
+    background-image: url(../images/Case_Study_John_Portfolio.png);
+    background-size: contain;
+    width: 642px;
+    height: 415px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-3 {
+    background-image: url(/);
+    background-size: contain;
+    width: 642px;
+    height: 415px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card-4 {
+    background-image: url(/);
+    background-size: contain;
+    width: 642px;
+    height: 415px;
+    border: 2px solid #ddd;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+  
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
